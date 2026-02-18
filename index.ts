@@ -1,8 +1,26 @@
-let producto: string = "Pan";
-let cantidad: number = 10;
-let vendido: number = 3;
+// 1️⃣ Identificadores Técnicos
+type Hexadecimal = `0x${string}`;
+type Binary = `0b${string}`;
 
-cantidad = cantidad - vendido;
+const productId: Hexadecimal = "0xA1F4C9";
+const warehouseCode: Binary = "0b10101001";
 
-console.log("Producto:", producto);
-console.log("Cantidad restante:", cantidad);
+// 2️⃣ Estado de Disponibilidad
+const isCoffeeMakerActive: boolean = true;
+
+// 3️⃣ Registro de Lote (Tupla Heterogénea)
+const batchRecord: [Date, number, string] = [
+  new Date("2025-02-18"),
+  1001,
+  "Proveedor Central"
+];
+
+// 4️⃣ Historial de Precios (Arreglo con Unión)
+const priceHistory: (Date | string[])[] = [
+  new Date("2025-01-10"),
+  ["Subió 10%", "Ajuste por inflación"],
+  new Date("2025-02-01"),
+  ["Descuento especial", "Promoción de temporada"]
+];
+
+console.log("Fase 2 completada correctamente");
