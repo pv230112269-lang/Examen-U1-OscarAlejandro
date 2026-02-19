@@ -23,4 +23,11 @@ const priceHistory: (Date | string[])[] = [
   ["Descuento especial", "Promoción de temporada"]
 ];
 
+// 5️⃣ Coordenadas de Entrega (Tupla Numérica)
+const deliveryCoordinates: [number, number, number] = [
+  19.4326,   // Latitud
+  -99.1332,  // Longitud
+  2240       // Altitud en metros
+];
+
 console.log("Fase 2 completada correctamente");
